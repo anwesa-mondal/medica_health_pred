@@ -91,7 +91,7 @@ Launch Jupyter Notebook or Jupyter Lab:
 - Locate to the `health_monitoring_app/server` folder and run
   ```
   npm i
-  npm run dev
+  nodemon index.js
   ```
 - Locate to the `health_monitoring_app/flask_server` folder and run
   `python app.py`
