@@ -13,6 +13,7 @@ const Cardio = () => {
         // Create features array in the correct order
         const features = [
             parseFloat(formData.gender.value),
+            parseFloat(formData.education.value),
             parseFloat(formData.age.value),
             parseFloat(formData.currentSmoker.value),
             parseFloat(formData.cigarettesPerDay.value),
@@ -24,7 +25,8 @@ const Cardio = () => {
             parseFloat(formData.systolicBP.value),
             parseFloat(formData.diastolicBP.value),
             parseFloat(formData.bmi.value),
-            parseFloat(formData.heartRate.value)
+            parseFloat(formData.heartRate.value),
+            parseFloat(formData.glucose.value)
         ];
 
         try {
@@ -59,6 +61,10 @@ const Cardio = () => {
                         </label>
                     </div>
                 </label>
+                <label className="mb-3">
+                    Education (on a scale of 1 to 5):
+                </label>
+                    <input type="number" name="education" className="ml-2 p-2 border border-gray-300 rounded" required />
                 <label className="mb-3">
                     Age:
                 </label>
@@ -142,6 +148,10 @@ const Cardio = () => {
                     Heart rate:
                 </label>
                     <input type="text" name="heartRate" className="ml-2 p-2 border border-gray-300 rounded" />
+                <label className="mb-3">
+                    Glucose:
+                </label>
+                    <input type="text" name="glucose" className="ml-2 p-2 border border-gray-300 rounded" />
                 <button type="submit" className="p-2 bg-green-500 text-white rounded mt-3 hover:bg-green-600">
                     Diagnose
                 </button>
